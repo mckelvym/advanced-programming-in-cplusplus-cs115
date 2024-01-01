@@ -1,10 +1,12 @@
-// Area of a cirlce program
+// Area of a circle program
 // Mark McKelvy
 //
 // Purpose: for credit
 
-// Prog to calculate the area of a cirlce
-#include<iostream.h>
+// Prog to calculate the area of a circle
+#include <iostream>
+using namespace std;
+
 int main()
 {
 	const float pi = 3.1415f;

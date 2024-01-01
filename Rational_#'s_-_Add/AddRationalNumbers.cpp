@@ -3,7 +3,8 @@
 // October 11, 2002
 
 // *** Preprocessor Directives ***
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 // *** Programmer Defined Data Types ***
 struct rational
@@ -17,12 +18,12 @@ rational Add (rational r1, rational r2);
 void Enter (rational &r1, rational &r2);
 void Print (rational r);
 
-int main() 
+int main()
 {
 	rational r1;
 	rational r2;
 	rational result;
-	
+
 	Enter (r1, r2);
 	result = Add (r1, r2);
 	Print (result);
@@ -50,4 +51,3 @@ void Print (rational r)
 {
 	cout << "The number is: " << r.numerator << "/" << r.denominator << endl;
 }
-

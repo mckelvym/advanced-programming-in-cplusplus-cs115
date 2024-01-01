@@ -1,9 +1,10 @@
 // Mark McKelvy
 
-#include <iostream.h>
-#include <iomanip.h>
+#include <iostream>
+#include <iomanip>
 #include <math.h>
 #include <stdlib.h>
+using namespace std;
 
 // *** function prototypes ***
 void q_energy();			// function to calculate quantum energy
@@ -14,10 +15,10 @@ int main()
 {
 	int choice;
 
-	while (true) 
+	while (true)
 	{
 		choice = menu();
-		
+
 		switch (choice)
 			{
 			case 1:
@@ -68,15 +69,15 @@ void q_energy()
 	long firstpart;
 	long power;
 	char E;
-	
+
 	cout << "*********************************************************" << endl;
 	cout << "*** Please enter wavelength in the form of '3.00 E 8' ***" << endl;
 	cout << "*********************************************************" << endl << endl;
 	cin >> firstpart >> E >> power;
-	
+
 	wavelength = firstpart * pow(10, power);
 	quantum_energy = (planck * lightspeed) / wavelength;
-	
+
 	cout << endl << endl << "Quantum Energy (E) = " << quantum_energy << " Joules" << endl << endl;
 }
 

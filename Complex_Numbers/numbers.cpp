@@ -1,12 +1,10 @@
 // Programmed By Mark McKelvy
 // Adds, Subtracts, Multiplies, and Divides Complex Numbers
 
+#include <iostream>
+using namespace std;
 
-
-#include <iostream.h>
-
-main()
-
+int main()
 {
 // Declare all Variables
 
@@ -20,7 +18,7 @@ main()
 	float foiltwo;
 	float denominator;
 // And characters...
-	char i;					
+	char i;
 
 
 // Input From User

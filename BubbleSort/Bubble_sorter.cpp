@@ -2,7 +2,8 @@
 // Develop C++ code to Bubble sort a 10 int array & search that array for a target value
 // return its position in the array.
 
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 int main ()
 {
@@ -12,8 +13,8 @@ int main ()
 	int flag = 1;
 	int lowerbound = 0;
 	int upperbound = 10;
-	int search_num = iarray[10], search_pos,temp, compare_count;
-	
+	int search_num = iarray[9], search_pos,temp, compare_count;
+
 
 	for (i = 9; i >= 0; i--)
 		iarray[i] = i;
@@ -27,11 +28,11 @@ int main ()
 			{
 				temp = iarray[j + 1] = iarray[j];
 				iarray[j] = temp;
-				flag = 1; 
+				flag = 1;
 			}
 		}
 	}
-	
+
 	search_pos = (lowerbound + upperbound) / 2;
 	while((iarray[search_pos] != search_num) && (lowerbound <= upperbound))
 	{
@@ -48,13 +49,13 @@ int main ()
 	}
 	if(lowerbound <= upperbound)
 	{
-		cout << "A binary serach found the number in" << compare_count << " comparisons.\n";
+		cout << "A binary serach found the number in " << compare_count << " comparisons.\n";
 	}
 	else
 	{
 		cout << "Number not found by binary search after " << compare_count << " comparisons.\n";
 	}
 
-	
+
 	return 0;
 }

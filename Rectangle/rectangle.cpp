@@ -4,7 +4,9 @@
 // Purpose: for credit
 
 // Prog to calculate the area of a rectangle
-#include<iostream.h>
+#include <iostream>
+using namespace std;
+
 int main()
 {
 	int side1;

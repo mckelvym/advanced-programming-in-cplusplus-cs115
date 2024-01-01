@@ -1,7 +1,8 @@
 // Mark McKelvy
 // This program squares a whole number
 
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 // *** Function Declarations ***
 int get_input();
@@ -21,7 +22,7 @@ int main()
 
 int get_input()
 {
-	int number;	
+	int number;
 	cout << "Please enter a whole number to be squared: ";
 	cin >> number;
 	return (number);
@@ -39,4 +40,3 @@ int output(int y)
 	cout << endl << "The Number Squared is: " << y << endl;
 	return 0;
 }
-

@@ -1,10 +1,12 @@
 // Mark McKelvy
 /* This Program will take a phrase and reverse the characters */
 
-#include <iostream.h>
+#include <iostream>
 #include <string.h>
 
-main()
+using namespace std;
+
+int main()
 {
 	int count;
 	char swapchar;
@@ -19,7 +21,7 @@ main()
 		text[i] = text[count-1-i];
 		text[count-1-i] = swapchar;
 	}
-		
+
 	cout << text << endl << endl;
 	return 0;
 }
